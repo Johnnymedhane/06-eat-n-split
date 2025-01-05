@@ -167,3 +167,57 @@ form h2 {
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
 }
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%; /* Reduce font size for tablets */
+  }
+
+  .app {
+    grid-template-columns: 1fr; /* Make grid single-column */
+    row-gap: 2rem;
+  }
+
+  .form-add-friend {
+    grid-template-columns: 1fr; /* Single-column for forms */
+    gap: 1rem;
+  }
+
+  .form-split-bill {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 2rem;
+  }
+
+  .sidebar li {
+    grid-template-columns: auto 1fr auto; /* Adjust columns for flexibility */
+    column-gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%; /* Further reduce font size for small devices */
+  }
+
+  body {
+    padding: 1rem; /* Add more padding for smaller screens */
+  }
+
+  .button {
+    padding: 0.6rem 1rem; /* Adjust button size */
+    font-size: 1.4rem;
+  }
+
+  .form-add-friend,
+  .form-split-bill {
+    padding: 1.5rem; /* Reduce form padding */
+  }
+
+  .sidebar ul {
+    gap: 0.2rem; /* Reduce spacing between list items */
+  }
+
+  .sidebar li {
+    padding: 0.8rem; /* Reduce padding for list items */
+  }
+}
